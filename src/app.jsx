@@ -376,17 +376,39 @@ function NotificationsCenter({ notifications }) {
 
 function ReviewsPage() {
   const reviews = [
-    { name: "Mina Petrović", text: "Very fast and easy booking process. I found a provider in less than a minute." },
-    { name: "Nikola Jovanović", text: "The interface is colorful, clear, and simple to use on both desktop and mobile." },
-    { name: "Ana Marković", text: "Notifications and dashboard make it easy to remember scheduled appointments." },
+    {
+      name: "Ksenija Pavlović",
+      role: "Course Instructor",
+      photo: "https://i.imgur.com/97bNNFG.jpeg",
+      text: "Very fast and easy booking process. I found a provider in less than a minute.",
+    },
+    {
+      name: "Ognjen Matić",
+      role: "Practice Mentor",
+      photo: "https://media.licdn.com/dms/image/v2/D4D03AQEf8dO3oV12Fg/profile-displayphoto-scale_200_200/B4DZuFiLaNH8Ag-/0/1767471888701?e=2147483647&v=beta&t=DYc9P4uy-aphCBbDoZnJbvcuJuVtwUlFwLr9HeTho6I",
+      text: "The interface is colorful, clear, and simple to use on both desktop and mobile.",
+    },
+    {
+      name: "Petar Vukićević",
+      role: "QA Instructor",
+      photo: "https://i.imgur.com/ysyQe27.jpeg",
+      text: "Notifications and dashboard make it easy to remember scheduled appointments.",
+    },
   ];
 
   return (
     <div className="review-grid">
       {reviews.map((review) => (
         <article className="card review-card" key={review.name}>
+          <div className="review-user">
+            <img src={review.photo} alt={review.name} className="review-photo" />
+            <div>
+              <h3>{review.name}</h3>
+              <p className="review-role">{review.role}</p>
+            </div>
+          </div>
+
           <div className="stars">★★★★★</div>
-          <h3>{review.name}</h3>
           <p>{review.text}</p>
         </article>
       ))}
@@ -447,7 +469,7 @@ function ComingSoon() {
         <p className="working-text">working on it</p>
         </div>
       </div>
-      
+
       <div className="coming-grid">
         {features.map(([icon, title, text]) => (
           <article className="coming-card" key={title}>
