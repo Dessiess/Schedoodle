@@ -393,3 +393,31 @@ textarea { min-height: 105px; resize: vertical; }
   .hero-card { border-radius: 30px; }
   .theme-toggle { right: 14px; bottom: 14px; }
 }
+
+.working-area {
+  margin-top: 24px;
+  width: 100%;
+  min-height: 240px;
+  border-radius: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.working-gif {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 24px;
+  border: 3px solid rgba(255,255,255,0.35);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+}
+
+.working-text {
+  margin-top: 14px;
+  font-size: 18px;
+  font-weight: 900;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}

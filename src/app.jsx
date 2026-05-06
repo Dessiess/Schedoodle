@@ -430,9 +430,24 @@ function ComingSoon() {
     <section className="coming-soon">
       <div>
         <span className="coming-label">🚀 Coming soon</span>
+
         <h2>Future updates already planned for Schedoodle.</h2>
-        <p>The MVP delivers the core booking experience while future updates expand automation, integrations and global support.</p>
+        
+        <p>
+              The MVP delivers the core booking experience while future updates expand
+              automation, integrations and global support.
+        </p>
+  
+        <div className="working-area">
+          <img
+            src="https://yt3.ggpht.com/9AsegagNDr8Gr1cE9ztb39JRX_LS6Spbh_4oSjdM729fcDBUg6X0sSlsl77LGkc6JVEefy4WmgIzTnM"
+            alt="Working on it"
+            className="working-gif"
+          />
+        <p className="working-text">working on it</p>
+        </div>
       </div>
+      
       <div className="coming-grid">
         {features.map(([icon, title, text]) => (
           <article className="coming-card" key={title}>
